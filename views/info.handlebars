@@ -1,0 +1,31 @@
+{{> nav}}
+<div class="det" style="background-image: url('../static/images/12.jpg'); background-repeat: no-repeat;background-size: cover;">
+<h1 class="text-center mt-3" style="color:rgb(22, 13, 13)">INFORMATION</h1>
+<table class="table table-striped">
+    <b>
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Age</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+        </tr>
+        </b>
+    </thead>
+    {{#each info}}
+    <tbody>
+        <b>
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.city}}</td>
+        </tr>
+        </b>
+    </tbody>
+    {{/each}}
+    </div>
+    {{>footer}}
+</table>
